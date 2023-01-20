@@ -4,6 +4,7 @@
 body {
     color: #333333;
     font-size: 18px;
+    background-color: #fafafafa;
 }
 
 header {
@@ -22,13 +23,15 @@ header {
 .banner {
     padding: 6.4rem 4.3rem;
     border-bottom: 1px solid #dddddd;
+    background-color: white;
 
     h1 {
         font-size: 96px;
     }
 }
 
-.projects {
-    background-color: #fafafafa;
+.projects,
+.single-project {
+
     padding: 6.4rem 4.3rem;
 }

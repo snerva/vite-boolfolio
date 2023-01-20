@@ -60,7 +60,7 @@ export default {
 <template>
     <section class="projects">
         <div class="container">
-            <template v-if="projects">
+            <template v-if="projects && !loading">
                 <div class="row row-cols-1 row-cols-sm-3 g-4">
                     <div class="col" v-for="project in projects.data">
                         <div class="card border-0 shadow-sm rounded-0 rounded-bottom">
@@ -68,7 +68,8 @@ export default {
                             <div class="card-body">
                                 <h4>{{ project.title }}</h4>
                                 <p>{{ trimBody(project.description) }}</p>
-                                <a href="#">Read more</a>
+                                <router-link :to="{ name: 'single-project', params: { slug: project.slug } }">Read
+                                    more</router-link>
                             </div>
                             <div class="card-footer">
                                 <div class="type">
@@ -109,6 +110,10 @@ export default {
                         </li>
                     </ul>
                 </nav>
+            </template>
+
+            <template class="position-relative" v-else-if="loading">
+                <div class="loading-ring">Loading...<span></span></div>
             </template>
             <div v-else>
                 <p>No projects here.</p>
