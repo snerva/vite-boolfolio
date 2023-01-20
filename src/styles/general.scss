@@ -14,8 +14,20 @@ header {
     nav {
         .container-fluid {
             width: 90%;
-        }
 
+            .nav-link {
+                color: #ffffff;
+
+                &.active {
+                    color: #e31b6d;
+                }
+
+                &:hover {
+                    color: #e31b6d;
+                }
+
+            }
+        }
     }
 
 }

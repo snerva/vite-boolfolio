@@ -16,17 +16,20 @@ export default {
                 </button>
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <router-link class="nav-link text-white" :to="{ name: 'home' }" aria-current="page">home
+                        <router-link active-class="active" class="nav-link" :to="{ name: 'home' }"
+                            aria-current="page">home
                             <span class="visually-hidden">(current)</span></router-link>
                     </li>
                     <li class="nav-item">
-                        <router-link class="nav-link text-white" :to="{ name: 'about' }">about</router-link>
+                        <router-link active-class="active" class="nav-link" :to="{ name: 'about' }">about</router-link>
                     </li>
                     <li class="nav-item">
-                        <router-link class="nav-link text-white" :to="{ name: 'projects' }">projects</router-link>
+                        <router-link active-class="active" class="nav-link"
+                            :to="{ name: 'projects' }">projects</router-link>
                     </li>
                     <li class="nav-item">
-                        <router-link class="nav-link text-white" :to="{ name: 'contact' }">contact</router-link>
+                        <router-link active-class="active" class="nav-link"
+                            :to="{ name: 'contact' }">contact</router-link>
                     </li>
                 </ul>
             </div>
