@@ -1,6 +1,11 @@
 // Import all of Bootstrap's CSS
 @import "/node_modules/bootstrap/scss/bootstrap";
 
+body {
+    color: #333333;
+    font-size: 18px;
+}
+
 header {
     background-color: #111;
     font-size: 18px;
@@ -14,21 +19,16 @@ header {
 
 }
 
-main {
-    color: #333333;
-    font-size: 18px;
+.banner {
+    padding: 6.4rem 4.3rem;
+    border-bottom: 1px solid #dddddd;
 
-    .banner {
-        padding: 6.4rem 4.3rem;
-        border-bottom: 1px solid #dddddd;
-
-        h1 {
-            font-size: 96px;
-        }
+    h1 {
+        font-size: 96px;
     }
+}
 
-    .projects {
-        background-color: #fafafafa;
-        padding: 6.4rem 4.3rem;
-    }
+.projects {
+    background-color: #fafafafa;
+    padding: 6.4rem 4.3rem;
 }

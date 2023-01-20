@@ -2,7 +2,7 @@
 import axios from 'axios';
 
 export default {
-    name: "AppMain",
+    name: "ProjectsList",
     data() {
         return {
             projects: null,

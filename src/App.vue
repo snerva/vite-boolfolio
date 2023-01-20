@@ -1,13 +1,10 @@
 <script>
-import AppMain from './components/AppMain.vue'
 import AppHeader from './components/AppHeader.vue'
-import AppBanner from './components/AppBanner.vue'
 
 export default {
     components: {
-        AppMain,
         AppHeader,
-        AppBanner,
+
     },
 
 }
@@ -15,10 +12,7 @@ export default {
 
 <template>
     <AppHeader></AppHeader>
-    <main>
-        <AppBanner></AppBanner>
-        <AppMain></AppMain>
-    </main>
+    <router-view></router-view>
 
 </template>
 
