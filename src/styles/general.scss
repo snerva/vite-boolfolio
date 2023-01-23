@@ -1,6 +1,12 @@
 // Import all of Bootstrap's CSS
 @import "/node_modules/bootstrap/scss/bootstrap";
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     color: #333333;
     font-size: 18px;
@@ -53,38 +59,42 @@ header {
     padding: 6.4rem 4.3rem;
 }
 
-.loader-wrapper {
-    width: 140px;
-    height: 140px;
-    margin: 0 auto;
+.loader-page {
+    height: 48vh;
 
-    .loader {
-        width: 100%;
-        height: 100%;
-        border: 4px solid #dadada;
-        border-top-color: #04c2c9;
-        border-bottom-color: #e31b6d;
-        border-radius: 50%;
-        animation: rotate 5s linear infinite;
+    .loader-wrapper {
+        width: 140px;
+        height: 140px;
+        margin: 0 auto;
 
-        @keyframes rotate {
-            0% {
-                transform: scale(1) rotate(360deg);
+        .loader {
+            width: 100%;
+            height: 100%;
+            border: 4px solid #dadada;
+            border-top-color: #04c2c9;
+            border-bottom-color: #e31b6d;
+            border-radius: 50%;
+            animation: rotate 5s linear infinite;
+
+            @keyframes rotate {
+                0% {
+                    transform: scale(1) rotate(360deg);
+                }
+
+                50% {
+                    transform: scale(.8) rotate(-360deg);
+                }
+
+                100% {
+                    transform: scale(1) rotate(360deg);
+                }
             }
 
-            50% {
-                transform: scale(.8) rotate(-360deg);
+            .loader-inner-ring {
+                border-top-color: #e31b6d;
+                border-bottom-color: #04c2c9;
+                animation-duration: 2.5s;
             }
-
-            100% {
-                transform: scale(1) rotate(360deg);
-            }
-        }
-
-        .loader-inner-ring {
-            border-top-color: #e31b6d;
-            border-bottom-color: #04c2c9;
-            animation-duration: 2.5s;
         }
     }
 }
@@ -106,12 +116,32 @@ footer {
         cursor: pointer;
     }
 
-    .nav-link {
-        color: #ffffff;
+    .footer-menu {
+        display: flex;
 
-        &:hover {
-            color: #04c2c9;
+        .nav-link {
+            color: #ffffff;
+
+            &:hover {
+                color: #04c2c9;
+            }
+
         }
+    }
+}
 
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 56px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    h1 {
+        font-size: 30px;
+    }
+
+    .footer-menu {
+        display: none;
     }
 }

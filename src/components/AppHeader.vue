@@ -6,6 +6,7 @@ export default {
 </script>
 
 <template>
+    <a name="back"></a>
     <header>
         <nav class="navbar navbar-dark sticky-top  navbar-expand-lg">
             <div class="container-fluid">

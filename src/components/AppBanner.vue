@@ -8,7 +8,6 @@ export default {
 <template>
     <div class="banner">
         <div class="container">
-            <a name="back"></a>
             <div class="row">
                 <div class="col-5">
                     <h1><span class="initial">{{ initial }}</span>{{ title }}</h1>

@@ -112,10 +112,12 @@ export default {
                 </nav>
             </template>
 
-            <template class="position-relative" v-else-if="loading">
-                <div class="loader-wrapper">
-                    <div class="loader">
-                        <div class="loader loader-inner-ring"></div>
+            <template v-else-if="loading">
+                <div class="loader-page">
+                    <div class="loader-wrapper">
+                        <div class="loader">
+                            <div class="loader loader-inner-ring"></div>
+                        </div>
                     </div>
                 </div>
             </template>
