@@ -34,7 +34,7 @@ export default {
 <template>
     <AppBanner :title="$route.params.slug" />
 
-    <section class="single-project">
+    <section class="content">
         <div class="container">
             <template v-if="project">
                 <div class="row">

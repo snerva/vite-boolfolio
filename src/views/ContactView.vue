@@ -8,8 +8,12 @@ export default {
 </script>
 
 <template>
-    <AppBanner title="contact." />
-    <h2>contact wip.</h2>
+    <AppBanner initial="c" title="ontact." />
+    <section class="content">
+        <div class="container">
+            <h2>contact wip.</h2>
+        </div>
+    </section>
 </template>
 
 <style lang="scss" scoped>

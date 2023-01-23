@@ -58,7 +58,7 @@ export default {
 </script>
 
 <template>
-    <section class="projects">
+    <section class="content">
         <div class="container">
             <template v-if="projects && !loading">
                 <div class="row row-cols-1 row-cols-sm-3 g-4">
@@ -113,7 +113,11 @@ export default {
             </template>
 
             <template class="position-relative" v-else-if="loading">
-                <div class="loading-ring">Loading...<span></span></div>
+                <div class="loader-wrapper">
+                    <div class="loader">
+                        <div class="loader loader-inner-ring"></div>
+                    </div>
+                </div>
             </template>
             <div v-else>
                 <p>No projects here.</p>

@@ -8,8 +8,12 @@ export default {
 </script>
 
 <template>
-    <AppBanner title="about." />
-    <h2>about wip.</h2>
+    <AppBanner initial="a" title="bout." />
+    <section class="content">
+        <div class="container">
+            <h2>about wip.</h2>
+        </div>
+    </section>
 </template>
 
 <style lang="scss" scoped>

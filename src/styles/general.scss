@@ -7,29 +7,31 @@ body {
     background-color: #fafafafa;
 }
 
+.container-fluid {
+    width: 90%;
+}
+
 header {
     background-color: #111;
     font-size: 18px;
+    padding: 0 5%;
 
-    nav {
-        .container-fluid {
-            width: 90%;
+    .navbar-collapse {
+        flex-grow: inherit;
 
-            .nav-link {
-                color: #ffffff;
+        .nav-link {
+            color: #ffffff;
 
-                &.active {
-                    color: #e31b6d;
-                }
-
-                &:hover {
-                    color: #e31b6d;
-                }
-
+            &.active {
+                color: #e31b6d;
             }
+
+            &:hover {
+                color: #e31b6d;
+            }
+
         }
     }
-
 }
 
 .banner {
@@ -39,11 +41,77 @@ header {
 
     h1 {
         font-size: 96px;
+
+        .initial {
+            color: #04c2c9;
+        }
     }
 }
 
-.projects,
-.single-project {
 
+.content {
     padding: 6.4rem 4.3rem;
+}
+
+.loader-wrapper {
+    width: 140px;
+    height: 140px;
+    margin: 0 auto;
+
+    .loader {
+        width: 100%;
+        height: 100%;
+        border: 4px solid #dadada;
+        border-top-color: #04c2c9;
+        border-bottom-color: #e31b6d;
+        border-radius: 50%;
+        animation: rotate 5s linear infinite;
+
+        @keyframes rotate {
+            0% {
+                transform: scale(1) rotate(360deg);
+            }
+
+            50% {
+                transform: scale(.8) rotate(-360deg);
+            }
+
+            100% {
+                transform: scale(1) rotate(360deg);
+            }
+        }
+
+        .loader-inner-ring {
+            border-top-color: #e31b6d;
+            border-bottom-color: #04c2c9;
+            animation-duration: 2.5s;
+        }
+    }
+}
+
+footer {
+    background-color: #111;
+    font-size: 18px;
+    padding: 40px 5% 10px 5%;
+    position: relative;
+
+    .fa-angles-up {
+        position: absolute;
+        padding: 8px;
+        top: -25px;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        background-color: #e31b6d;
+        cursor: pointer;
+    }
+
+    .nav-link {
+        color: #ffffff;
+
+        &:hover {
+            color: #04c2c9;
+        }
+
+    }
 }
