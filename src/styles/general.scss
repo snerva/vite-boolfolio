@@ -92,8 +92,7 @@ header {
 .content-white {
     background-color: #ffffff;
     padding: 6.4rem 4.3rem;
-    border-bottom: 1px solid #dddddd;
-    border-top: 1px solid #dddddd;
+
 }
 
 h2 {
@@ -136,8 +135,37 @@ h2 {
 
 }
 
+.tech-icons {
+    position: relative;
+    width: 100%;
+    height: 100%;
+
+    .blue-gear {
+        color: #04c2c9;
+        font-size: 2rem;
+        position: absolute;
+        bottom: 44px;
+        right: 161px;
+    }
+
+
+    .pink-gear {
+        color: #e31b6d;
+        font-size: 3.5rem;
+        position: absolute;
+        bottom: 40px;
+        left: 167px;
+    }
+
+    .others {
+        width: 100%;
+
+    }
+}
+
 .skill-icons {
     color: #04c2c9;
+    font-size: 3rem;
 }
 
 .loader-page {
