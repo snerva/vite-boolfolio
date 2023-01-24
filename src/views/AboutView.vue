@@ -75,17 +75,27 @@ export default {
     <section class="content-white">
         <div class="container">
             <div class="row">
-                <h2 class="text-center mb-4"><span class="initial-pink">my </span>skills.</h2>
+                <h2 class="text-center mb-5"><span class="initial-pink">my </span>skills.</h2>
                 <div class="col text-center">
-                    <h3>Responsive</h3>
+                    <div class="skill-icons multidevice">
+                        <font-awesome-icon icon="fa-solid fa-laptop" size="2xl" />
+                        <font-awesome-icon icon="fa-solid fa-mobile-screen-button" size="lg" />
+                    </div>
+                    <h3><span class="initial">r</span>esponsive</h3>
                     <p>Layouts will work on any device.</p>
                 </div>
                 <div class="col text-center">
-                    <h3>Intuitive</h3>
+                    <div class="skill-icons">
+                        <font-awesome-icon icon="fa-regular fa-lightbulb" size="2xl" />
+                    </div>
+                    <h3><span class="initial">i</span>ntuitive</h3>
                     <p>Complex problems into simple, intuitive design.</p>
                 </div>
                 <div class="col text-center">
-                    <h3>Dynamic</h3>
+                    <div class="skill-icons">
+                        <font-awesome-icon icon="fa-solid fa-rocket" size="2xl" />
+                    </div>
+                    <h3><span class="initial">d</span>ynamic</h3>
                     <p>Making pages come to life.</p>
                 </div>
             </div>
