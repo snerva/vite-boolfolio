@@ -1,7 +1,7 @@
 <script>
 export default {
     name: 'AppBanner',
-    props: ['initial', 'title']
+    props: ['initial', 'title', 'subtitle', 'text']
 }
 </script>
 
@@ -11,6 +11,8 @@ export default {
             <div class="row">
                 <div class="col-5">
                     <h1><span class="initial">{{ initial }}</span>{{ title }}</h1>
+                    <h3>{{ subtitle }}</h3>
+                    <p>{{ text }}</p>
                 </div>
             </div>
             <div class="col-7"></div>

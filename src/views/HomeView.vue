@@ -8,10 +8,10 @@ export default {
 </script>
 
 <template>
-    <AppBanner initial="w" title="elcome." />
+    <AppBanner initial="h" title="i." />
     <section class="content">
         <div class="container">
-            <h2>home wip.</h2>
+            <h2></h2>
         </div>
     </section>
 </template>

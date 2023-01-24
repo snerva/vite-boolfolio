@@ -1,6 +1,20 @@
 // Import all of Bootstrap's CSS
 @import "/node_modules/bootstrap/scss/bootstrap";
 
+@mixin devices ($breakpoint) {
+    @if $breakpoint ==tablet {
+        @media only screen and (max-width: 768px) {
+            @content;
+        }
+    }
+
+    @if $breakpoint ==mobile {
+        @media only screen and (max-width: 480px) {
+            @content;
+        }
+    }
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -17,9 +31,17 @@ body {
     width: 90%;
 }
 
+.initial {
+    color: #04c2c9;
+}
+
+.initial-pink {
+    color: #e31b6d;
+}
+
 header {
     background-color: #111;
-    font-size: 18px;
+    font-size: 1rem;
     padding: 0 5%;
 
     .navbar-collapse {
@@ -47,9 +69,17 @@ header {
 
     h1 {
         font-size: 96px;
+    }
 
-        .initial {
-            color: #04c2c9;
+    @include devices(tablet) {
+        h1 {
+            font-size: 56px;
+        }
+    }
+
+    @include devices(mobile) {
+        h1 {
+            font-size: 30px;
         }
     }
 }
@@ -57,6 +87,53 @@ header {
 
 .content {
     padding: 6.4rem 4.3rem;
+}
+
+.content-white {
+    background-color: #ffffff;
+    padding: 6.4rem 4.3rem;
+    border-bottom: 1px solid #dddddd;
+    border-top: 1px solid #dddddd;
+}
+
+h2 {
+    font-size: 36px;
+}
+
+.bars-wrapper {
+    padding: 0 8px;
+
+
+    .bar {
+        background-color: #e0e8e8;
+        height: 27px;
+        width: 100%;
+        margin-bottom: 8px;
+        position: relative;
+
+        .fill {
+            background-color: #77cccf;
+            position: absolute;
+            left: 0;
+            top: 0;
+            opacity: 1;
+
+            .tag {
+                position: absolute;
+                background-color: #04c2c9;
+                top: 0;
+                left: 0;
+                height: 100%;
+                width: 110px;
+            }
+        }
+
+        .percentage {
+            padding-right: 16px;
+            z-index: 1;
+        }
+    }
+
 }
 
 .loader-page {
@@ -127,21 +204,30 @@ footer {
             }
 
         }
+
+        @include devices(tablet) {
+            display: none;
+        }
+
+        @include devices(mobile) {
+            display: none;
+
+        }
     }
 }
 
-@media screen and (max-width: 768px) {
-    h1 {
-        font-size: 56px;
-    }
-}
+// @media screen and (max-width: 768px) {
+//     h1 {
+//         font-size: 56px;
+//     }
+// }
 
-@media screen and (max-width: 480px) {
-    h1 {
-        font-size: 30px;
-    }
+// @media screen and (max-width: 480px) {
+//     h1 {
+//         font-size: 30px;
+//     }
 
-    .footer-menu {
-        display: none;
-    }
-}
+//     .footer-menu {
+//         display: none;
+//     }
+// }

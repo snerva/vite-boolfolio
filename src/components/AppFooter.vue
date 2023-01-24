@@ -9,7 +9,7 @@ export default {
         <a href="#back" class="turn-back">
             <font-awesome-icon icon="fa-solid fa-angles-up" inverse size="2xl" />
         </a>
-        <div class="container-fluid d-flex justify-content-between align-items-center">
+        <div class="container d-flex justify-content-between align-items-center">
             <div class="copyright">
                 <a class="text-decoration-none text-white" href="#">&copy; 2023 Selene Nerva</a>
             </div>
