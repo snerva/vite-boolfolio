@@ -1,12 +1,13 @@
 <script>
 import axios from 'axios';
+import { state } from '../state';
 
 export default {
     name: "ProjectsList",
     data() {
         return {
             projects: null,
-            base_url: 'http://localhost:8000',
+            state,
             loading: true,
             error: null,
             max: 100
@@ -31,7 +32,7 @@ export default {
         getImage(path) {
             console.log(path);
             if (path) {
-                return this.base_url + '/storage/app/public/' + path
+                return this.state.api_url + '/storage/app/public/' + path
             }
             return '/images/placeholder.png'
 
@@ -52,7 +53,7 @@ export default {
         }
     },
     mounted() {
-        this.getProjects(this.base_url + '/api/projects')
+        this.getProjects(this.state.api_url + '/api/projects')
     }
 }
 </script>
@@ -61,7 +62,7 @@ export default {
     <section class="content">
         <div class="container">
             <template v-if="projects && !loading">
-                <div class="row row-cols-1 row-cols-sm-3 g-4">
+                <div class="row row-cols-1 row-cols-md-3 g-4">
                     <div class="col" v-for="project in projects.data">
                         <div class="card border-0 shadow-sm rounded-0 rounded-bottom">
                             <img class="card-image rounded-top" :src="getImage(project.cover_image)" alt="">

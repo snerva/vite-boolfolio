@@ -87,6 +87,7 @@ header {
 
 .content {
     padding: 6.4rem 4.3rem;
+
 }
 
 .content-white {
@@ -163,9 +164,118 @@ h2 {
     }
 }
 
-.skill-icons {
-    color: #04c2c9;
-    font-size: 3rem;
+.tech-icons {
+    text-align: center;
+
+    .gear {
+        display: block;
+
+        .static-icon {
+            max-width: 156px;
+            margin: 26px;
+        }
+    }
+
+    .others {
+        display: none;
+        background-color: #ffffff;
+        width: 80%;
+        border: 4px solid #04c2c9;
+        border-style: outset;
+        border-radius: 20px;
+
+        .animated-icon {
+            max-width: 208px;
+        }
+    }
+
+    &:hover {
+        cursor: pointer;
+
+        .gear {
+            display: none;
+        }
+
+        .others {
+            display: block;
+
+        }
+
+    }
+}
+
+.skill {
+    border: 4px solid #04c2c9;
+    border-style: outset;
+    border-radius: 20px;
+
+    .skill-icons {
+        text-align: center;
+
+        .static-icon {
+            max-width: 156px;
+            margin: 26px;
+            display: inline-block;
+        }
+
+        .animated-icon {
+            max-width: 208px;
+            display: none;
+        }
+    }
+
+    &:hover {
+        cursor: pointer;
+
+        .static-icon {
+            display: none;
+        }
+
+        .animated-icon {
+            display: inline-block;
+        }
+
+    }
+
+}
+
+.facts {
+
+    .facts-img {
+        text-align: end;
+
+        .static-icon {
+            max-width: 208px;
+            margin: 26px;
+            display: inline-block;
+        }
+
+        .animated-icon {
+            max-width: 260px;
+            display: none;
+        }
+    }
+
+    &:hover {
+        background-color: #ffffff;
+        cursor: pointer;
+        border-bottom: 4px solid #04c2c9;
+        border-style: outset;
+        border-radius: 20px;
+
+        .static-icon {
+            display: none;
+        }
+
+        .animated-icon {
+            display: inline-block;
+        }
+
+        .pink-facts {
+            color: #e31b6d;
+        }
+
+    }
 }
 
 .loader-page {

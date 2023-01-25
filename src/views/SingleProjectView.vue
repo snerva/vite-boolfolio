@@ -1,6 +1,7 @@
 <script>
 import axios from 'axios';
 import AppBanner from '../components/AppBanner.vue';
+import { state } from '../state';
 
 export default {
     name: 'SingleProjectView',
@@ -11,12 +12,12 @@ export default {
         return {
             project: null,
             loading: true,
-            api_url: 'http://localhost:8000'
+            state
         }
     },
     mounted() {
         //console.log(this.$route.params.slug);
-        const url = this.api_url + '/api/projects/' + this.$route.params.slug
+        const url = this.state.api_url + '/api/projects/' + this.$route.params.slug
         //console.log(url);
         axios.get(url)
             .then(response => {
@@ -42,7 +43,7 @@ export default {
                         <p class="description">{{ project.description }}</p>
                     </div>
                     <div class="col-5">
-                        <img class="img-fluid" :src="api_url + '/storage/app/public/' + project.cover_image"
+                        <img class="img-fluid" :src="state.api_url + '/storage/app/public/' + project.cover_image"
                             :alt="project.title">
                     </div>
                 </div>

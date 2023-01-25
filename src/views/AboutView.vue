@@ -66,16 +66,16 @@ export default {
                     <!--/laravel-->
                 </div>
                 <div class="col">
-                    <div class="tech-icons d-flex flex-column justify-content-center">
-                        <div class="blue-gear">
-                            <font-awesome-icon icon="fa-solid fa-gear" />
-                        </div>
-                        <div class="others text-center">
+                    <div class="tech-icons d-flex justify-content-center">
+
+                        <div class="gear p-2">
                             <h3><span class="initial">o</span>thers.</h3>
-                            <p>Node.js, Bootstrap, Sass, Figma</p>
+                            <img class="img-fluid  static-icon" src="../../public/images/settings.png" alt="">
                         </div>
-                        <div class="pink-gear">
-                            <font-awesome-icon icon="fa-solid fa-gear" />
+                        <div class="others text-center p-2">
+                            <h3><span class="initial">o</span>thers.</h3>
+                            <img class="img-fluid animated-icon" src="../../public/images/settings.gif" alt="">
+                            <p>Node.js, Bootstrap, Sass, Figma</p>
                         </div>
                     </div>
 
@@ -87,48 +87,72 @@ export default {
         <div class="container">
             <h2 class="text-center mb-5"><span class="initial-pink">my </span>skills.</h2>
             <div class="row row-cols-1 row-cols-md-3">
-                <div class="col text-center">
-                    <div class="skill-icons multidevice">
-                        <font-awesome-icon icon="fa-solid fa-laptop" />
-                        <font-awesome-icon icon="fa-solid fa-mobile-screen-button" />
+                <div class="col text-center p-2">
+                    <div class="skill">
+                        <div class="skill-icons multidevice">
+                            <img class="img-fluid  static-icon" src="../../public/images/computer.png" alt="">
+                            <img class="img-fluid animated-icon" src="../../public/images/computer.gif" alt="">
+                        </div>
+                        <h3><span class="initial">r</span>esponsive</h3>
+                        <p>Layouts will work on any device.</p>
                     </div>
-                    <h3><span class="initial">r</span>esponsive</h3>
-                    <p>Layouts will work on any device.</p>
                 </div>
-                <div class="col text-center">
-                    <div class="skill-icons">
-                        <font-awesome-icon icon="fa-regular fa-lightbulb" />
+                <div class="col text-center p-2">
+                    <div class="skill">
+                        <div class="skill-icons">
+                            <img class="img-fluid  static-icon" src="../../public/images/idea.png" alt="">
+                            <img class="img-fluid animated-icon" src="../../public/images/idea.gif" alt="">
+                        </div>
+                        <h3><span class="initial">i</span>ntuitive</h3>
+                        <p>Complex problems into simple, intuitive design.</p>
                     </div>
-                    <h3><span class="initial">i</span>ntuitive</h3>
-                    <p>Complex problems into simple, intuitive design.</p>
                 </div>
-                <div class="col text-center">
-                    <div class="skill-icons">
-                        <font-awesome-icon icon="fa-solid fa-rocket" />
+                <div class="col text-center p-2">
+                    <div class="skill">
+                        <div class="skill-icons">
+                            <img class="img-fluid  static-icon" src="../../public/images/rocket.png" alt="">
+                            <img class="img-fluid animated-icon" src="../../public/images/rocket.gif" alt="">
+                        </div>
+                        <h3><span class="initial">d</span>ynamic</h3>
+                        <p>Making pages come to life.</p>
                     </div>
-                    <h3><span class="initial">d</span>ynamic</h3>
-                    <p>Making pages come to life.</p>
                 </div>
             </div>
         </div>
     </section>
     <section class="content">
-        <div class="container">
-            <div class="row row-cols-1 row-cols-md-2">
-                <div class="col">
-                    <h2 class="mb-4"><span class="initial">f</span>acts.</h2>
+        <div class="container facts p-3">
+            <h2 class="mb-4 ms-5"><span class="initial">f</span>acts.</h2>
+            <div class="row  row-cols-1 row-cols-md-2">
+                <div class="col d-flex justify-content-center">
+                    <div class="facts-img">
+                        <img class="img-fluid  static-icon" src="../../public/images/coffee-cup.png" alt="">
+                        <img class="img-fluid animated-icon" src="../../public/images/coffee-cup.gif" alt="">
+                    </div>
 
-                    <ul class="list-unstyled">
-                        <li>I'm a coffee addict</li>
-                        <li>I eat a lot of pizza</li>
-                        <li>I love interior design</li>
-                        <li>I designed my tattoos</li>
-                        <li>Bit illustrator</li>
-                        <li>Also sous-chef</li>
-                    </ul>
                 </div>
                 <div class="col">
-                    <span>img here</span>
+                    <ul class="list-unstyled">
+                        <li>
+                            <h3 class="text-center">&#10094;<span class="pink-facts">Coffee</span> addict&#10095;</h3>
+                        </li>
+                        <li>
+                            <h3>&#10094;Eat a lot of <span class="pink-facts">pizza</span>&#10095;</h3>
+                        </li>
+                        <li>
+                            <h3 class="text-center">&#10094;Love <span class="pink-facts">interior design</span>&#10095;
+                            </h3>
+                        </li>
+                        <li>
+                            <h3>&#10094;I designed my <span class="pink-facts">tattoos</span>&#10095;</h3>
+                        </li>
+                        <li>
+                            <h3 class="text-center">&#10094;Bit <span class="pink-facts">illustrator</span>&#10095;</h3>
+                        </li>
+                        <li>
+                            <h3>&#10094;Also <span class="pink-facts">sous-chef</span>&#10095;</h3>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
