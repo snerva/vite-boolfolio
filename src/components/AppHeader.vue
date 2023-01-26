@@ -8,15 +8,18 @@ export default {
 <template>
     <a name="back"></a>
     <header>
-        <nav class="navbar navbar-dark sticky-top  navbar-expand-lg">
+        <nav class="navbar navbar-dark navbar-expand-sm">
             <div class="container">
-                <a class="navbar-brand" href="#">Logo.</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <a class="navbar-brand" href="#">
+                    <img class="img-fluid logo" src="/images/logo.png" alt="">
+                </a>
+                <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                    aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav">
+                    <ul class="navbar-nav ms-auto mt-2 mt-lg-0">
                         <li class="nav-item">
                             <router-link active-class="active" class="nav-link" :to="{ name: 'home' }"
                                 aria-current="page">home
