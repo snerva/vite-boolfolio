@@ -33,23 +33,25 @@ export default {
 </script>
 
 <template>
-    <AppBanner :title="$route.params.slug" />
+    <main>
+        <AppBanner :title="$route.params.slug" />
 
-    <section class="content">
-        <div class="container">
-            <template v-if="project">
-                <div class="row">
-                    <div class="col-7">
-                        <p class="description">{{ project.description }}</p>
+        <section class="content">
+            <div class="container">
+                <template v-if="project">
+                    <div class="row">
+                        <div class="col-7">
+                            <p class="description">{{ project.description }}</p>
+                        </div>
+                        <div class="col-5">
+                            <img class="img-fluid" :src="state.api_url + '/storage/app/public/' + project.cover_image"
+                                :alt="project.title">
+                        </div>
                     </div>
-                    <div class="col-5">
-                        <img class="img-fluid" :src="state.api_url + '/storage/app/public/' + project.cover_image"
-                            :alt="project.title">
-                    </div>
-                </div>
-            </template>
-        </div>
-    </section>
+                </template>
+            </div>
+        </section>
+    </main>
 
 </template>
 

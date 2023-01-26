@@ -23,9 +23,10 @@
 
 body {
     color: #333333;
-    font-size: 18px;
+    font-size: 20px;
     background-color: #fafafafa;
 }
+
 
 .container-fluid {
     width: 90%;
@@ -367,6 +368,18 @@ footer {
         @include devices(mobile) {
             display: none;
 
+        }
+    }
+
+    .footer-logo {
+        display: none;
+
+        .logo {
+            width: 70px;
+        }
+
+        @include devices(tablet) {
+            display: flex;
         }
     }
 }

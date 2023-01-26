@@ -8,18 +8,24 @@ export default {
 </script>
 
 <template>
-    <AppBanner initial="h" title="ello, i'm Selene." subtitle="I write code." />
-    <section class="content">
-        <div class="container">
-            <h2 class="text-center"><span class="initial-pink">My</span> latest project</h2>
-            <hr class="initial-pink">
-            <div class="row">
-                <div class="col">
+    <main>
+        <AppBanner initial="h" title="ello, i'm Selene." subtitle="I write code. Love making pages come to life."
+            text="And i love pizza." image="" style="" />
+        <section class="content">
+            <div class="container">
+                <h2 class="text-center"><span class="initial-pink">My</span> latest project</h2>
+                <hr class="initial-pink">
+                <div class="row">
+                    <div class="col">
 
+                    </div>
+                    <div class="col">
+
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </main>
 </template>
 
 <style lang="scss" scoped>

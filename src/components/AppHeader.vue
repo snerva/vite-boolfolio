@@ -10,9 +10,9 @@ export default {
     <header>
         <nav class="navbar navbar-dark navbar-expand-sm">
             <div class="container">
-                <a class="navbar-brand" href="#">
+                <router-link class="navbar-brand" :to="{ name: 'home' }" aria-current="page">
                     <img class="img-fluid logo" src="/images/logo.png" alt="">
-                </a>
+                </router-link>
                 <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
                     aria-label="Toggle navigation">

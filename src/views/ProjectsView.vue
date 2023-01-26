@@ -12,8 +12,10 @@ export default {
 </script>
 
 <template>
-    <AppBanner initial="p" title="rojects."></AppBanner>
-    <ProjectsList></ProjectsList>
+    <main>
+        <AppBanner initial="p" title="rojects."></AppBanner>
+        <ProjectsList></ProjectsList>
+    </main>
 </template>
 
 <style lang="scss" scoped>
