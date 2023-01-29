@@ -8,9 +8,8 @@ export default {
 </script>
 
 <template>
+    <AppBanner title="Hi there, i'm Selene." subtitle="Jr Full Stack Web Developer" image="/images/sn-photo.png" />
     <main>
-        <AppBanner initial="h" title="ello, i'm Selene." subtitle="I write code. Love making pages come to life."
-            text="And i love pizza." image="" style="" />
         <section class="content">
             <div class="container">
                 <h2 class="text-center"><span class="initial-pink">My</span> latest project</h2>

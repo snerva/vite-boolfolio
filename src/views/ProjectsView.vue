@@ -12,8 +12,9 @@ export default {
 </script>
 
 <template>
+    <AppBanner title="Projects." subtitle="Check out some of my latest works: websites and apps.">
+    </AppBanner>
     <main>
-        <AppBanner initial="p" title="rojects."></AppBanner>
         <ProjectsList></ProjectsList>
     </main>
 </template>

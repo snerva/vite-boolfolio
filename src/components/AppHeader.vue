@@ -8,7 +8,7 @@ export default {
 <template>
     <a name="back"></a>
     <header>
-        <nav class="navbar navbar-dark navbar-expand-sm">
+        <nav class="navbar navbar-expand-sm  ">
             <div class="container">
                 <router-link class="navbar-brand" :to="{ name: 'home' }" aria-current="page">
                     <img class="img-fluid logo" src="/images/logo.png" alt="">

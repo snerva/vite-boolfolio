@@ -1,11 +1,9 @@
 <script>
-import AppBanner from '../components/AppBanner.vue';
 import axios from 'axios';
 import { state } from '../state';
 
 export default {
     name: 'ContactView',
-    components: { AppBanner },
     data() {
         return {
             state,
@@ -48,8 +46,18 @@ export default {
 
 <template>
     <main>
-        <AppBanner initial="c" title="ontact." subtitle="Get in touch if you have any questions."
-            image="/images/email.gif" style="width:208px" />
+        <section class="content about">
+            <div class="container">
+                <div class="row row-cols-1 row-cols-md-2">
+                    <div class="col">
+                        <h1><span class="initial">c</span>ontact.</h1>
+                        <h3>Get in touch if you have any questions.</h3>
+                    </div>
+                    <div class="col d-flex justify-content-md-end align-items-lg-end">
+                    </div>
+                </div>
+            </div>
+        </section>
         <section class="content">
             <div class="container">
                 <h2 class="text-center"><span class="initial-pink">via social</span> media.</h2>
