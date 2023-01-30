@@ -9,7 +9,7 @@ export default {
     <main>
         <section class="background-up about">
             <div class="container-fluid">
-                <div class="row row-cols-1 row-cols-md-2">
+                <div class="row row-cols-1 row-cols-md-2 px-5">
                     <div class="col">
                         <div class="col-content d-flex">
                             <div class="d-flex">
