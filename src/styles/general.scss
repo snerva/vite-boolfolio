@@ -39,7 +39,7 @@ body {
 }
 
 .initial {
-    color: #5ca0ff;
+    color: #01a3a2;
 }
 
 .initial-pink {
@@ -61,7 +61,7 @@ body {
         }
 
         h1 {
-            font-size: 154px;
+            font-size: calc(8.375rem + 1.5vw) !important;
             font-family: 'Allison', cursive;
         }
     }
@@ -85,6 +85,7 @@ body {
     }
 
     @include devices(portatile) {
+
         .col-content {
             padding: 6.4rem 2rem;
 
@@ -93,7 +94,7 @@ body {
             }
 
             h1 {
-                font-size: 116px;
+                font-size: calc(6.375rem + 1.5vw) !important;
             }
 
             h3 {
@@ -111,6 +112,8 @@ body {
     }
 
     @include devices(tablet) {
+        min-height: auto;
+
         .col-content {
             padding: 6.4rem 2rem;
 
@@ -119,7 +122,7 @@ body {
             }
 
             h1 {
-                font-size: 92px;
+                font-size: calc(4.375rem + 1.5vw) !important;
             }
         }
 

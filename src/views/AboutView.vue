@@ -33,70 +33,106 @@ export default {
                 </div>
             </div>
         </section>
-        <section class="content tech-skills">
-            <div class="container">
-                <h2 class="mb-4"><span class="initial-pink">tech </span>skills.</h2>
-                <div class="row row-cols-1 row-cols-md-2">
-                    <div class="col">
+        <section class="background-middle skills">
+            <div class="container-fluid">
+                <div class="tech-skills pb-5">
+                    <h2 class="text-center"><span class="initial-pink">tech </span>skills.</h2>
+                    <div class="row row-cols-1 pt-4">
+                        <div class="col text-center">
+                            <div class="row row-cols-1 row-cols-md-2">
+                                <div class="col text-center">
+                                    <h3><span class="initial">Front</span>-end</h3>
+                                    <ul class="list-unstyled">
+                                        <li>Html5</li>
+                                        <li>Css3/Scss</li>
+                                        <li>Javascript</li>
+                                        <li>Css: Bootstrap 4/5, Sass</li>
+                                        <li>Js: Vue.js, Vite, Node.js, Axios</li>
+                                    </ul>
+                                </div>
+                                <div class="col text-center">
+                                    <h3><span class="initial">Back</span>-end</h3>
+                                    <ul class="list-unstyled">
+                                        <li>Php</li>
+                                        <li>Php: Laravel 9</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col text-center">
+                            <div class="row row-cols-1 row-cols-md-3">
+                                <div class="col"></div>
+                                <div class="col text-center">
+                                    <h3><span class="initial">O</span>thers</h3>
+                                    <ul class="list-unstyled">
+                                        <li>Versioning system: Git</li>
+                                        <li>Package manager: Npm, Composer, MySql</li>
+                                        <li>Local server: Mamp</li>
+                                        <li>API: Postman</li>
+                                    </ul>
+                                </div>
+                                <div class="col"></div>
+                            </div>
+
+
+                        </div>
                     </div>
-                    <div class="col">
+                </div>
+                <div class="my-skills p-5">
+                    <h2 class="text-center"><span class="initial-pink">my </span>skills.</h2>
+                    <div class="row row-cols-1 row-cols-md-3 align-items-center pt-5">
+                        <div class="col text-center p-2">
+                            <div class="skill p-3">
+                                <h3><span class="initial">R</span>esponsive</h3>
+                                <p>Layouts will work on any device.</p>
+                            </div>
+                        </div>
+                        <div class="col text-center p-2">
+                            <div class="skill p-3">
+                                <h3><span class="initial">I</span>ntuitive</h3>
+                                <p>Complex problems into simple, intuitive design.</p>
+                            </div>
+                        </div>
+                        <div class="col text-center p-2">
+                            <div class="skill p-3">
+                                <h3><span class="initial">D</span>ynamic</h3>
+                                <p>I love making pages come to life.</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
-        <!--/.tech skills-->
-        <section class="content personal-skills">
-            <div class="container">
-                <h2 class="text-center mb-5"><span class="initial-pink">my </span>skills.</h2>
-                <div class="row row-cols-1 row-cols-md-3">
-                    <div class="col text-center p-2">
-                        <div class="skill">
-                            <div class="skill-icons multidevice">
-                                <img class="img-fluid animated-icon" src="/images/computer.gif" alt="">
-                            </div>
-                            <h3><span class="initial">r</span>esponsive</h3>
-                            <p>Layouts will work on any device.</p>
-                        </div>
-                    </div>
-                    <div class="col text-center p-2">
-                        <div class="skill">
-                            <div class="skill-icons">
-                                <img class="img-fluid  static-icon" src="/images/idea.png" alt="">
-                                <img class="img-fluid animated-icon" src="/images/idea.gif" alt="">
-                            </div>
-                            <h3><span class="initial">i</span>ntuitive</h3>
-                            <p>Complex problems into simple, intuitive design.</p>
-                        </div>
-                    </div>
-                    <div class="col text-center p-2">
-                        <div class="skill">
-                            <div class="skill-icons">
-                                <img class="img-fluid  static-icon" src="/images/rocket.png" alt="">
-                                <img class="img-fluid animated-icon" src="/images/rocket.gif" alt="">
-                            </div>
-                            <h3><span class="initial">d</span>ynamic</h3>
-                            <p>I love making pages come to life.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!--/.personal skills-->
+        <!--/.skills-->
         <section class="background-down fun-facts">
             <div class="container-fluid">
-                <div class="row  row-cols-1 row-cols-md-2">
-                    <div class="col">
-                        <div class="col-content d-flex ">
-                            <div class="d-flex">
-                                <div class="vr"></div>
-                            </div>
-                            <div class="fun-facts-text  text-end">
-                                <h2 class="px-5"><span class="initial">f</span>acts.</h2>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-
+                <h2 class="px-5 text-center"><span class="initial-pink">fun</span> facts.</h2>
+                <div class="row  row-cols-1 row-cols-md-2 py-5">
+                    <div class="col"></div>
+                    <div class="col text-center">
+                        <ul class="list-unstyled">
+                            <li>
+                                <h3><span class="key-word">Coffee</span> addict</h3>
+                            </li>
+                            <li>
+                                <h3>Eat a lot of <span class="key-word">Pizza</span></h3>
+                            </li>
+                            <li>
+                                <h3>Love <span class="key-word">Interior Design</span></h3>
+                            </li>
+                            <li>
+                                <h3>I designed my <span class="key-word">Tattoos</span></h3>
+                            </li>
+                            <li>
+                                <h3>Self-Taught <span class="key-word">Illustrator</span></h3>
+                            </li>
+                            <li>
+                                <h3><span class="key-word">Landscapes</span> lover</h3>
+                            </li>
+                            <li>
+                                <h3><span class="key-word">Sous-Chef</span></h3>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>

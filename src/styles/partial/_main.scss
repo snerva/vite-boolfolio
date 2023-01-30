@@ -22,6 +22,12 @@ main {
     background-color: #ffffff;
 }
 
+section {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
 .background-up {
     background-image: url(/images/bck_up.png);
     background-size: contain;
@@ -47,7 +53,39 @@ main {
         .photo {
             text-align: center;
         }
+
+        @include devices(tablet) {
+            .vr {
+                height: 435px;
+            }
+
+            h1 {
+                font-size: calc(6.375rem + 1.5vw) !important;
+            }
+        }
+
+        @include devices(mobile) {
+            .vr {
+                height: 450px;
+            }
+
+            .photo {
+                padding-top: 1.75rem;
+            }
+        }
     }
+}
+
+.background-middle {
+    background-color: #ffffff;
+    background-image: url(/images/bck_double.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-blend-mode: difference;
+
+
+
 }
 
 .background-down {
@@ -55,6 +93,7 @@ main {
     background-size: contain;
     background-repeat: no-repeat;
     background-position-y: bottom;
+    min-height: 50vh;
 
     .col-content {
         padding: 6.4rem 4.3rem;
@@ -67,6 +106,8 @@ main {
         }
     }
 }
+
+
 
 .content {
     background-color: #ffffff;
@@ -86,45 +127,12 @@ h2 {
     font-family: 'Allison', cursive;
 }
 
-.skill {
-    border-radius: 20px;
-    background-color: #cfcfcf;
-
-
-    .skill-icons {
-        text-align: center;
-
-        .animated-icon {
-            max-width: 208px;
-        }
-    }
-
+.key-word {
+    color: #01a3a2;
 }
 
-.facts {
-
-    .facts-img {
-        text-align: end;
-
-        .static-icon {
-            max-width: 208px;
-            margin: 26px;
-            display: inline-block;
-
-            @include devices(mobile) {
-                max-width: 156px;
-            }
-        }
-
-        .animated-icon {
-            max-width: 260px;
-            display: none;
-
-            @include devices(mobile) {
-                max-width: 208px;
-            }
-        }
-    }
+.fun-facts h3 {
+    font-family: 'Source Code Pro', monospace;
 }
 
 .loader-page {
@@ -139,7 +147,7 @@ h2 {
             width: 100%;
             height: 100%;
             border: 4px solid #dadada;
-            border-top-color: #5ca0ff;
+            border-top-color: #01a3a2;
             border-bottom-color: #be3455;
             border-radius: 50%;
             animation: rotate 5s linear infinite;
@@ -160,7 +168,7 @@ h2 {
 
             .loader-inner-ring {
                 border-top-color: #be3455;
-                border-bottom-color: #5ca0ff;
+                border-bottom-color: #01a3a2;
                 animation-duration: 2.5s;
             }
         }

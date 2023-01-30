@@ -12,7 +12,7 @@ export default {
     <main>
         <section class="content">
             <div class="container">
-                <h2 class="text-center"><span class="initial-pink">My</span> latest project</h2>
+                <h2 class="text-center"><span class="initial-pink">My</span> latest projects</h2>
                 <hr class="initial-pink">
                 <div class="row">
                     <div class="col">
