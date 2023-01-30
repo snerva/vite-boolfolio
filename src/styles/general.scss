@@ -49,9 +49,11 @@ body {
 .banner {
     background-color: rgb(0, 0, 0);
     min-height: 100vh;
+    display: flex;
+    align-items: center;
 
-    .col-content {
-        padding: 6.4rem 4.3rem;
+    .row {
+        padding: 6.4rem 0;
 
         .vr {
             height: 580px;

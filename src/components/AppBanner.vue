@@ -8,9 +8,9 @@ export default {
 <template>
     <div class="banner">
         <div class="container-fluid">
-            <div class="row row-cols-1 row-cols-md-2 py-5">
+            <div class="row row-cols-1 row-cols-md-2">
                 <div class="col">
-                    <div class="col-content d-flex">
+                    <div class="col-content px-5 d-flex">
                         <div class="d-flex">
                             <div class="vr"></div>
                         </div>
