@@ -30,22 +30,58 @@ header {
             width: 80px;
         }
 
-        .menu {
-
-            .nav-link {
-                color: #ffffff;
-
-                &.active {
-                    color: #be3455;
-                }
-
-                &:hover {
-                    color: #be3455;
-                }
-
-            }
+        .toggler {
+            display: none;
         }
 
-        @include devices(tablet) {}
+        .nav-link {
+            color: #ffffff;
+
+            &.active {
+                color: #be3455;
+            }
+
+            &:hover {
+                color: #be3455;
+            }
+
+        }
+
+        @include devices(tablet) {
+            position: absolute;
+            width: 100%;
+
+            .open-menu {
+                opacity: 1;
+                min-height: 100%;
+                width: 100%;
+            }
+
+            .close-menu {
+                opacity: 0;
+                min-height: 0;
+                padding: 0;
+            }
+
+            .menu {
+                background-color: #000000;
+                position: relative;
+                z-index: 100;
+                transition: all 0.2s ease-out;
+                flex-direction: column !important;
+                align-items: center !important;
+                justify-content: center !important;
+            }
+
+            .toggler {
+                display: block;
+                justify-self: end !important;
+                padding: 0 10px 10px 0;
+            }
+
+            .nav-item {
+                flex-direction: column !important;
+            }
+        }
     }
 }
