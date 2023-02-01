@@ -22,8 +22,8 @@ export default {
             <router-link class="brand p-2" :to="{ name: 'home' }" aria-current="page">
                 <img class="img-fluid logo" src="/images/logo.png" alt="">
             </router-link>
-            <button class="toggler" @click="showMenu()">
-                <span class="toggler-icon"></span>
+            <button class="toggler btn btn-link p-2" @click="showMenu()">
+                <span class="toggler-icon"><font-awesome-icon icon="fa-solid fa-bars" /></span>
             </button>
 
 

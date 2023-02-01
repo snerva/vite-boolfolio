@@ -31,6 +31,7 @@ header {
         }
 
         .toggler {
+            color: white;
             display: none;
         }
 
@@ -58,6 +59,7 @@ header {
             }
 
             .close-menu {
+                width: 100%;
                 opacity: 0;
                 min-height: 0;
                 padding: 0;
@@ -76,7 +78,6 @@ header {
             .toggler {
                 display: block;
                 justify-self: end !important;
-                padding: 0 10px 10px 0;
             }
 
             .nav-item {
