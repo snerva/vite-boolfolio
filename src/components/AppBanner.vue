@@ -1,7 +1,7 @@
 <script>
 export default {
     name: 'AppBanner',
-    props: ['initial', 'title', 'subtitle', 'text', 'image', 'style']
+    props: ['initial', 'title', 'subtitle', 'text', 'image', 'class']
 }
 </script>
 
@@ -22,7 +22,7 @@ export default {
                 </div>
                 <div class="col background-mix">
                     <div class="col-mix">
-                        <img class="img-fluid photo-banner" :style="style" :src="image" alt="">
+                        <img class="img-fluid" :class="class" :src="image" alt="">
                     </div>
                 </div>
             </div>

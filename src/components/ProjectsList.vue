@@ -62,32 +62,42 @@ export default {
     <section class="content">
         <div class="container">
             <template v-if="projects && !loading">
-                <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="row row-cols-1 row-cols-md-2 g-4">
                     <div class="col" v-for="project in projects.data">
-                        <div class="card border-0 shadow-sm rounded-0 rounded-bottom">
-                            <img class="card-image rounded-top" :src="getImage(project.cover_image)" alt="">
-                            <div class="card-body">
-                                <h4>{{ project.title }}</h4>
-                                <p>{{ trimBody(project.description) }}</p>
-                                <router-link :to="{ name: 'single-project', params: { slug: project.slug } }">Read
-                                    more</router-link>
-                            </div>
-                            <div class="card-footer">
-                                <div class="type">
-                                    <small><strong>Type:</strong></small>
-                                    <span v-if="project.type">{{ project.type.name }}</span>
-                                    <span v-else>No type matched.</span>
+                        <div class="card border-0 shadow rounded-0 text-bg-dark">
+                            <img class="card-img" :src="getImage(project.cover_image)" alt="">
+                            <div class="card-img-overlay p-5 bg-dark bg-opacity-50">
+                                <div class="text-top">
+                                    <h3 class="mb-4 fs-1" style=" font-family:'Allison', cursive">{{ project.title }}
+                                    </h3>
+                                    <p>{{ trimBody(project.description) }}</p>
                                 </div>
-                                <div class="technologies">
-                                    <small><strong>Technologies:</strong></small>
-                                    <template v-if="project.technologies.length > 0">
-                                        <small v-for="technology in project.technologies">#{{
-                                            technology.name
-                                        }}</small>
-                                    </template>
-                                    <template v-else>
-                                        <small>No technologies.</small>
-                                    </template>
+
+                                <div class="links d-flex justify-content-between align-content-center py-3">
+                                    <router-link :to="{ name: 'single-project', params: { slug: project.slug } }"
+                                        class="text-decoration-none fs-5 initial">Read
+                                        more <font-awesome-icon icon="fa-solid fa-arrow-right" /></router-link>
+                                </div>
+
+                                <div class="text-bottom">
+                                    <div class="type">
+                                        <span class="fs-6" v-if="project.type"><strong>Type:</strong>{{
+                                            project.type.name
+                                        }}
+                                        </span>
+                                        <span class="fs-6" v-else>No type matched.</span>
+                                    </div>
+                                    <div class="technologies">
+                                        <span class="fs-6"><strong>Technologies: </strong></span>
+                                        <template v-if="project.technologies.length > 0">
+                                            <small v-for="technology in project.technologies">#{{
+                                                technology.name
+                                            }} </small>
+                                        </template>
+                                        <template v-else>
+                                            <small>No technologies.</small>
+                                        </template>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -130,5 +140,33 @@ export default {
 </template>
 
 <style lang="scss" scoped>
+.card-img-overlay {
+    display: none;
 
+    a:hover {
+        color: #01a3a2 !important;
+        opacity: 0.7;
+    }
+}
+
+.card:hover {
+    cursor: pointer;
+
+    .card-img-overlay {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+
+    }
+}
+
+.active {
+
+    .page-link {
+        background-color: #01a3a2 !important;
+        border-color: #01a3a2 !important;
+    }
+
+}
 </style>

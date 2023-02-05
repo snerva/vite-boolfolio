@@ -12,8 +12,8 @@ export default {
 </script>
 
 <template>
-    <AppBanner title="Projects." subtitle="Check out some of my latest works: websites and apps.">
-    </AppBanner>
+    <AppBanner title="Projects." subtitle="Check out some of my latest works: websites and apps."
+        image="/images/projects_bck.png" class="photo-banner-projects" />
     <main>
         <ProjectsList></ProjectsList>
     </main>

@@ -76,12 +76,20 @@ body {
         position: relative;
 
         .col-mix {
-            .photo-banner {
+            .photo-banner-home {
                 height: 575px;
                 position: absolute;
                 left: -12%;
+                top: 0;
+            }
+
+            .photo-banner-projects {
+                height: 500px;
+                position: absolute;
+                left: -19%;
                 top: 15%;
             }
+
         }
 
     }
@@ -106,8 +114,12 @@ body {
 
         .background-mix {
             .col-mix {
-                .photo-banner {
+                .photo-banner-home {
                     height: 450px;
+                }
+
+                .photo-banner-projects {
+                    height: 400px;
                 }
             }
         }
@@ -135,9 +147,14 @@ body {
                 padding: 6.4rem 2rem;
                 text-align: center;
 
-                .photo-banner {
+                .photo-banner-home {
                     position: inherit;
                     height: 450px;
+                }
+
+                .photo-banner-projects {
+                    position: inherit;
+                    height: 400px;
                 }
             }
         }
