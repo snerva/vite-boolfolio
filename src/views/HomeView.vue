@@ -12,15 +12,17 @@ export default {
         class="photo-banner-home" />
     <main>
         <section class="content">
-            <div class="container">
-                <h2 class="text-center"><span class="initial-pink">My</span> latest projects</h2>
+            <div class="container-fluid">
+                <h2 class="text-center"><span class="initial-pink">My</span> projects</h2>
                 <hr class="initial-pink">
-                <div class="row">
+                <div class="row row-cols-1 row-cols-md-2 align-items-center">
                     <div class="col">
-
+                        <img class="img-fluid" src="/images/185.jpg" alt="">
                     </div>
-                    <div class="col">
-
+                    <div class="col ">
+                        <p>I've worked on many types of front-ends and back-ends projects,
+                            including websites and mobile
+                            app.</p>
                     </div>
                 </div>
             </div>

@@ -81,12 +81,13 @@ export default {
                     </div>
                     <div class="col"></div>
                 </div>
-                <h2 class="text-center"><span class="initial-pink">or send</span> me an email.</h2>
+
             </div>
         </section>
         <section class="background-down">
-            <div class="container">
-                <div class="row">
+            <div class="container-fluid">
+                <h2 class="text-center px-5"><span class="initial-pink">or send</span> me an email.</h2>
+                <div class="row p-5">
                     <div class="col d-flex justify-content-center">
                         <form class="w-75" @submit.prevent="sendForm()">
                             <div class="mb-3">
