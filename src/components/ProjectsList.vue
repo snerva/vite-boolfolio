@@ -107,7 +107,7 @@ export default {
                 <nav class="d-flex justify-content-center pt-5" aria-label="Page navigation">
                     <ul class="pagination">
                         <li class="page-item" v-if="projects.prev_page_url" @click="prevPage(projects.prev_page_url)">
-                            <a href="" class="page-link" aria-label="Previous">
+                            <a class="page-link" aria-label="Previous">
                                 <span aria-hidden="true">&laquo;</span>
                             </a>
                         </li>
@@ -115,7 +115,7 @@ export default {
                             <a href="#" class="page-link">{{ projects.current_page }}</a>
                         </li>
                         <li class="page-item" v-if="projects.next_page_url" @click="nextPage(projects.next_page_url)">
-                            <a href="" class="page-link" aria-label="Next">
+                            <a class="page-link" aria-label="Next">
                                 <span aria-hidden="true">&raquo;</span>
                             </a>
                         </li>
